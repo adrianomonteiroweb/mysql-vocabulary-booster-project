@@ -10,4 +10,4 @@ INNER JOIN
 w3schools.shippers AS shi ON ord.shipperid = shi.shipperid
 WHERE
 shi.shipperid IN (1 , 2)
-ORDER BY `Nome de contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;
+ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;

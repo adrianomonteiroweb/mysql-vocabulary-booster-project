@@ -8,4 +8,4 @@ w3schools.products AS pro
 INNER JOIN
 w3schools.order_details AS orddet ON pro.productid = orddet.productid
 GROUP BY Produto HAVING Média > 20 
-ORDER BY Média ASC, Produto ASC;
+ORDER BY Média, Produto;
