@@ -1,0 +1,9 @@
+USE w3schools;
+DELIMITER $$
+CREATE TRIGGER update_orders
+BEFORE INSERT ON orders
+FOR EACH ROW
+BEGIN
+SET NEW.orderdate = DATE(NOW());
+END $$
+DELIMITER ;
