@@ -1,16 +1,6 @@
-### Termos e acordos
+# Projeto Vocabulary Booster!
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
----
-
-# Boas vindas ao repositório do projeto Vocabulary Booster!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
+Projeto Trybe de MySQL para praticar as primeiras queries. 🚀
 
 # SUMÁRIO
 
@@ -18,15 +8,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
 - [Como desenvolver](#como-desenvolver)
-    - [Instruções para restaurar os bancos de dados w3schools e hr](#instruções-para-restaurar-os-bancos-de-dados-w3schools-e-hr)
-    - [Implementações técnicas](#implementações-técnicas)
+  - [Instruções para restaurar os bancos de dados w3schools e hr](#instruções-para-restaurar-os-bancos-de-dados-w3schools-e-hr)
+  - [Implementações técnicas](#implementações-técnicas)
 - [Requisitos do projeto](#requisitos-do-projeto)
 - `Requisitos obrigatórios`
+
   - [1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa](#1---exiba-os-países-e-indicando-se-cada-um-deles-se-encontra-ou-não-na-região-formada-pela-europa)
   - [2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo](#2---exiba-os-cargos-com-seu-nível-de-renumeração-associado-com-base-no-salário-máximo-do-cargo)
   - [3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo](#3---exiba-os-cargos-com-a-diferença-entre-seus-salários-máximo-e-mínimo)
@@ -50,39 +38,34 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [18 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo](#18---faça-um-relatório-que-mostra-o-histórico-de-cargos-das-pessoas-empregadas-mostrando-as-datas-de-início-e-de-saída-assim-como-os-anos-que-ela-ficou-nesse-cargo)
   - [19 - Crie uma função chamada exibir_quantidade_pessoas_contratadas_por_mes_e_ano no banco de dados hr que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias que foram contratadas nesse mês e ano](#19---crie-uma-função-chamada-exibir_quantidade_pessoas_contratadas_por_mes_e_ano-no-banco-de-dados-hr-que-dados-o-mês-e-ano-como-parâmetros-nessa-ordem-retorna-a-quantidade-de-pessoas-funcionárias-que-foram-contratadas-nesse-mês-e-ano)
   - [20 - Toda pessoa funcionária no banco hr possui um histórico completo de cargos.](#20---toda-pessoa-funcionária-no-banco-hr-possui-um-histórico-completo-de-cargos-logo-crie-uma-procedure-chamada-exibir_historico_completo_por_funcionario-que-dado-o-e-mail-de-uma-pessoa-funcionária-retorna-todos-os-cargos-em-seu-histórico)
-- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
-
----
 
 # Habilidades
+
 Neste projeto, verificamos se voce é capaz de:
 
-  * Criar condicionais no **SQL** usando **IF** e **CASE**
+- Criar condicionais no **SQL** usando **IF** e **CASE**
 
-  * Manipular _strings_ no **SQL**
+- Manipular _strings_ no **SQL**
 
-  * Usar as diversas funções matemáticas do **MySQL**
+- Usar as diversas funções matemáticas do **MySQL**
 
-  * Extrair informações específicas sobre datas de uma tabela
+- Extrair informações específicas sobre datas de uma tabela
 
-  * Utilizar as funções de agregação **AVG**, **MIN**, **MAX**, **SUM** e **COUNT**
+- Utilizar as funções de agregação **AVG**, **MIN**, **MAX**, **SUM** e **COUNT**
 
-  * Exibir e filtrar dados de forma agrupada com **GROUP BY** e **HAVING**
+- Exibir e filtrar dados de forma agrupada com **GROUP BY** e **HAVING**
 
-  * Utilizar **INNER JOIN**, **LEFT JOIN**, **RIGHT JOIN** para combinar dados de duas ou mais tabelas
+- Utilizar **INNER JOIN**, **LEFT JOIN**, **RIGHT JOIN** para combinar dados de duas ou mais tabelas
 
-  * Utilizar **SELF JOIN** para fazer join de uma tabela com ela própria
+- Utilizar **SELF JOIN** para fazer join de uma tabela com ela própria
 
-  * Utilizar SUBQUERIES
+- Utilizar SUBQUERIES
 
-  * Criar queries mais eficientes através do EXISTS
+- Criar queries mais eficientes através do EXISTS
 
-  * Montar blocos de código **SQL** reutilizáveis com **STORED PROCEDURES** e **STORED FUNCTIONS**
+- Montar blocos de código **SQL** reutilizáveis com **STORED PROCEDURES** e **STORED FUNCTIONS**
 
 ---
-
 
 # Entregáveis
 
@@ -103,6 +86,7 @@ Temos, nesse projeto, uma série de desafios com diferentes níveis de complexid
 1. Leia a pergunta e crie na raiz do projeto um arquivo chamado `desafioN.sql`, em que N é o número do desafio.
 
 2. O arquivo deve conter apenas o código SQL do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries e também de colocar o nome do **banco_de_dados.tabela_por_completo**, como no exemplo a seguir:
+
 ```sql
 SELECT * FROM hr.countries;
 ```
@@ -112,7 +96,6 @@ SELECT * FROM hr.countries;
 4. Faça isso até finalizar todos os desafios e depois siga as instruções de como entregar o projeto em [**Instruções para entregar seu projeto**](#instruções-para-entregar-seu-projeto)
 
 5. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter **na pasta raiz do projeto** os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio16.sql`, que conterão seu código `SQL` de cada desafio obrigatório, respectivamente. Se você fizer desafio bônus, o seu _Pull Request_ também deverá conter o arquivo `desafio17.sql` (caso faça o desafio 17), `desafio18.sql` (caso faça o desafio 18) e o `desafio19.sql` (caso faça o desafio 19).
-
 
 ## ⚠️ É importante que seus arquivos tenham exatamente estes nomes e estejam na raiz do projeto! ⚠️
 
@@ -124,70 +107,7 @@ SELECT * FROM hr.countries;
 
 Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
 
----
-
-## Data de Entrega
-
-  - Projeto individual.
-
-  - Será um dia de projeto.
-  
-  - Data de entrega para avaliação final do projeto: `01/11/2021 - 14:00h`.
-
----
-
 # Instruções para entregar seu projeto:
-
-### ANTES DE COMEÇAR A DESENVOLVER:
-
-1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-013-a-mysql-vocabulary-booster.git`
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-013-a-mysql-vocabulary-booster`
-
-2. Instale as dependências
-  * `npm i` ou `npm install`
-
-3. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b seunome-mysql-vocabulary-booster`
-
-4. Para cada exercício você deve criar um novo arquivo sql **na pasta raiz do projeto** seguindo a seguinte estrutura:
-  * desafio1.sql, desafio2.sql, desafio3.sql, desafio4.sql, ..., desafioN.sql
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando solução para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto MySQL Vocabulary Booster'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
----
-
-### DURANTE O DESENVOLVIMENTO
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
 
 # Como desenvolver
 
@@ -201,23 +121,23 @@ Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso 
 
 4. Selecione todo o código com o atalho `CTRL-A` e clique no ícone de trovão para executar o script.
 
-    ![Restaurando o banco w3schools](images/restore_database_1.png)
+   ![Restaurando o banco w3schools](images/restore_database_1.png)
 
 5. Aguarde alguns segundos (espere em torno de 30 segundos antes de tentar fazer algo).
 
 6. Clique no botão apontado na imagem a seguir para atualizar a listagem de banco de dados:
 
-    ![Tabelas do banco w3schools](images/refresh_databases.png)
+   ![Tabelas do banco w3schools](images/refresh_databases.png)
 
 7. Verifique se o banco restaurado possui todas as seguintes tabelas:
 
-    ![Tabelas do banco w3schools](images/w3school.png)
+   ![Tabelas do banco w3schools](images/w3school.png)
 
 8. Clique com botão direito em cada tabela e selecione "Select Rows". Certifique-se de que todas as tabelas possuem registros. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para o passo 10.
 
 9. Caso haja tabelas faltando, delete o banco de dados clicando com o botão direito em cima do banco de dados `w3schools` e selecione a opção `Drop Schema...`. Refaça os passos anteriores, desta vez aguardando um tempo maior quando executar o script de restauração.
 
-    ![Drop Schema](images/drop_schema.png)
+   ![Drop Schema](images/drop_schema.png)
 
 10. O mesmo processo mencionado anteriormente também deve ser feito para restaurar o banco `hr`. Verifique se o banco `hr` restaurado possui todas as tabelas indicadas na imagem abaixo. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para a próxima seção.
 
@@ -230,19 +150,23 @@ Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso 
 ## Implementações técnicas
 
 Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
+
 ```sh
 MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
 ```
 
 Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
+
 ```sh
 MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
 ```
 
 Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root`. Neste caso, você executaria:
+
 ```sh
 MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 ```
+
 ---
 
 :warning: **Não é necessário colocar** `USE NAMEDATABASE;` ou `SET SQL_SAFE_UPDATES = 0;` no início dos seus arquivos :warning:
@@ -255,7 +179,7 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 
 Crie uma query que mostre se o país pertence ou não à região `"Europe"`.
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 Seu relatório deve apresentar 02 colunas:
 
@@ -271,7 +195,7 @@ Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
 Categorize o nível de remuneração de cada cargo.
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 Seu relatório deve possuir as seguintes colunas:
 
@@ -279,13 +203,13 @@ Seu relatório deve possuir as seguintes colunas:
 
 2. A segunda deve possuir o alias "**Nível**" e exibir o nível de remuneração do cargo com base no seu **salário máximo**, categorizando os níveis de remuneração da seguinte forma:
 
-    Salário máximo entre 5000 e 10000 :arrow_right: Baixo
+   Salário máximo entre 5000 e 10000 :arrow_right: Baixo
 
-    Salário máximo entre 10001 e 20000 :arrow_right: Médio
+   Salário máximo entre 10001 e 20000 :arrow_right: Médio
 
-    Salário máximo entre 20001 e 30000 :arrow_right: Alto
+   Salário máximo entre 20001 e 30000 :arrow_right: Alto
 
-    Salário máximo acima de 30000 :arrow_right: Altíssimo
+   Salário máximo acima de 30000 :arrow_right: Altíssimo
 
 Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
@@ -295,7 +219,7 @@ Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
 Crie uma query que exiba 02 colunas:
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 1. A primeira deve possuir o alias "**Cargo**" e exibir o nome do cargo.
 
@@ -321,13 +245,13 @@ Crie uma query que exiba 03 colunas:
 
 3. A terceira deve possuir o alias "**Senioridade**" e categorizar o nível de senioridade do cargo com base na média salarial, da seguinte forma:
 
-    Média salarial entre 2000 - 5800 :arrow_right: Júnior
+   Média salarial entre 2000 - 5800 :arrow_right: Júnior
 
-    Média salarial entre 5801 - 7500 :arrow_right: Pleno
+   Média salarial entre 5801 - 7500 :arrow_right: Pleno
 
-    Média salarial entre 7501 - 10500 :arrow_right: Sênior
+   Média salarial entre 7501 - 10500 :arrow_right: Sênior
 
-    Média salarial acima de 10500 :arrow_right: CEO
+   Média salarial acima de 10500 :arrow_right: CEO
 
 Sempre que fizer uso da média salarial, arredonde o valor para 02 casas decimais.
 
@@ -361,9 +285,9 @@ Em caso de empate na variação, os resultados devem ser ordenados pelo nome do 
 
 ## 6 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas
 
-Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**. 
+Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**.
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 Monte uma query que exiba 04 colunas:
 
@@ -501,9 +425,9 @@ Faça um relatório que lista todas as pessoas funcionárias **que possuem o mes
 
 Suponha que haja somente 03 pessoas funcionárias, `João`, `Maria` e `Alex`, e:
 
-* `João` e `Maria` possuem o mesmo cargo;
+- `João` e `Maria` possuem o mesmo cargo;
 
-* `Alex` não tem outra pessoa funcionária com o mesmo cargo.
+- `Alex` não tem outra pessoa funcionária com o mesmo cargo.
 
 Logo, podemos dizer que `João` tem uma pessoa funcionária associada, `Maria`, que possui o mesmo cargo. Também podemos dizer que `Maria` tem uma pessoa funcionária associada, `João`, que possui o mesmo cargo. Já `Alex` não tem outra pessoa funcionária associada com o mesmo cargo. Portanto, seu relatório deveria ter dois resultados, um indicando que `Maria` tem uma pessoa associada `João` que possui o mesmo cargo, e o outro resultado indicando que `João` tem uma pessoa associada `Maria` que possui o mesmo cargo.
 
@@ -529,7 +453,7 @@ Em caso de empate, os resultados devem ser ordenados pela coluna **Nome completo
 
 ## 13 - Exibe todos produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**
 
-Exiba todos os produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**. 
+Exiba todos os produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**.
 
 > Use o banco `w3schools` como referência
 
@@ -559,7 +483,7 @@ Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o
 
 Sua procedure deve retornar somente 01 coluna com o alias "**Média salarial**", que mostra a média salarial arredondada para duas casas decimais.
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 Confirme a execução correta da procedure chamando-a e passando o nome de cargo igual a `"Programmer"`:
 
@@ -573,7 +497,7 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos **presentes em seu histórico**.
 
-> Use o banco `hr` como referência 
+> Use o banco `hr` como referência
 
 Confirme que sua função retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
@@ -649,13 +573,13 @@ Chamando-a dessa forma, sua procedure deve mostrar que a pessoa funcionária `Ne
 
 Para sinalizar que o seu projeto está pronto para o _"Code Review"_ de colegas, faça o seguinte:
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
+- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
 
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
 
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
+  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
 
 Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
